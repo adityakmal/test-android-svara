@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/svara"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:fontFamily="Bahnschrift"
+        android:hint="Username/Email" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:fontFamily="Bahnschrift" 
+        android:hint="Password"
+        android:password="true"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignRight="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="56dp"
+        android:text="Sign In" 
+        android:textSize="20dp"
+        android:fontFamily="Bahnschrift"
+        android:background="#42bcf4"
+        android:textColor="#fff"/>
+
+</RelativeLayout>
